@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71c663f5-2277-48b2-9576-a94e213c7ff3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dart_application_1/bin/dart_application_1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/dart_application_1/bin/dart_application_1.dart" afterDir="false" />
-    </list>
+    <list default="true" id="71c663f5-2277-48b2-9576-a94e213c7ff3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +18,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../RTL/SnowPlow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my_app" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -33,6 +31,7 @@
       <updated>1686056338384</updated>
       <workItem from="1686056339635" duration="13000" />
       <workItem from="1686137841194" duration="954000" />
+      <workItem from="1686316413462" duration="32000" />
     </task>
     <servers />
   </component>
@@ -40,9 +39,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1686141201839">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1686316444298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.-86.1920.1040@0.0.1536.824" timestamp="1686141201839" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1686316444298" />
   </component>
 </project>
