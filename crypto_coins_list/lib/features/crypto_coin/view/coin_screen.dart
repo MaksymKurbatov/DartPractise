@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../repositories/crypto_coins/models/crypto_coin.dart';
+
 class CoinScreen extends StatefulWidget {
   const CoinScreen({super.key});
 
@@ -12,15 +14,17 @@ class _CoinScreenState extends State<CoinScreen> {
   @override
   void didChangeDependencies() {
     final args = ModalRoute.of(context)?.settings.arguments;
+
     if (args == null) {
       return;
     }
-    if (args is! String) {
-      return;
+
+    if (args is CryptoCoin) {
+      coinName = args.name;
     }
 
     setState(() {
-      coinName = args;
+      // coinName = args;
     });
     super.didChangeDependencies();
   }
