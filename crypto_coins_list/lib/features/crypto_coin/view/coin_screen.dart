@@ -23,9 +23,7 @@ class _CoinScreenState extends State<CoinScreen> {
       coinName = args.name;
     }
 
-    setState(() {
-      // coinName = args;
-    });
+    setState(() {});
     super.didChangeDependencies();
   }
 
