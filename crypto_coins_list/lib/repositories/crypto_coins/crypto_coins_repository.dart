@@ -1,5 +1,6 @@
 import 'package:crypto_coins_list/repositories/crypto_coins/abstract_repository.dart';
 import 'package:crypto_coins_list/repositories/crypto_coins/models/crypto_coin.dart';
+import 'package:crypto_coins_list/repositories/crypto_coins/models/crypto_coin_details.dart';
 import 'package:dio/dio.dart';
 
 class CryproCoinsRepository implements AbstractRepository {
@@ -24,5 +25,21 @@ class CryproCoinsRepository implements AbstractRepository {
           imageURL: 'https://www.cryptocompare.com/$imageURL');
     }).toList();
     return cryproCoinsList;
+  }
+
+  @override
+  Future<dynamic> getCoinsDetails(coinName) async {
+    final response = await dio.get(
+        'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${coinName}&tsyms=USD');
+    final data = response.data as Map<String, dynamic>;
+    final dataRaw = data['RAW'][coinName]['USD'];
+    final imageURL = dataRaw['IMAGEURL'];
+    final coinDetails = CryptoCoinDetails(
+        name: coinName,
+        priceInUSD: dataRaw['PRICE'],
+        imageURL: 'https://www.cryptocompare.com/$imageURL',
+        highDay: dataRaw['HIGHDAY'],
+        lowhDay: dataRaw['LOWDAY']);
+    return coinDetails;
   }
 }
