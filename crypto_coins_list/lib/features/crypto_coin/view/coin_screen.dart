@@ -2,7 +2,6 @@ import 'package:crypto_coins_list/features/crypto_coin/block/crypto_coin_block.d
 import 'package:crypto_coins_list/repositories/crypto_coins/abstract_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../repositories/crypto_coins/models/crypto_coin.dart';

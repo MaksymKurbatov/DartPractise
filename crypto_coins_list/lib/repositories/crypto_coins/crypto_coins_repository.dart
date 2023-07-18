@@ -30,7 +30,7 @@ class CryproCoinsRepository implements AbstractRepository {
   @override
   Future<dynamic> getCoinsDetails(coinName) async {
     final response = await dio.get(
-        'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${coinName}&tsyms=USD');
+        'https://min-api.cryptocompare.com/data/pricemultifull?fsyms=$coinName&tsyms=USD');
     final data = response.data as Map<String, dynamic>;
     final dataRaw = data['RAW'][coinName]['USD'];
     final imageURL = dataRaw['IMAGEURL'];
