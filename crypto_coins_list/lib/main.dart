@@ -43,4 +43,6 @@ void main() {
     () => runApp(const CryptoCurrenciesApp()),
     (error, st) => GetIt.I<Talker>().handle(error, st),
   );
+
+  //test
 }
